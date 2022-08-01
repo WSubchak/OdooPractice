@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="hr_hospital_main_menu"
+              name="Hospital"
+              web_icon="hr_hospital,static/description/icon.png"
+              sequence="300"/>
+
+    <menuitem id="hr_hospital_patient_catalog_menu"
+              name="Patients details"
+              parent="hr_hospital_main_menu"
+              sequence="100"/>
+
+    <menuitem id="hr_hospital_doctor_catalog_menu"
+              name="Doctors details"
+              parent="hr_hospital_main_menu"
+              sequence="200"/>
+
+
+</odoo>
