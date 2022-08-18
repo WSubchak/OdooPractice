@@ -3,3 +3,12 @@ access_hr_hospital_patient,hr_hospital.patient,model_hr_hospital_patient,base.gr
 access_hr_hospital_patientcard,hr_hospital.patientcard,model_hr_hospital_patientcard,base.group_user,1,1,1,1
 access_hr_hospital_doctor,hr_hospital.doctor,model_hr_hospital_doctor,base.group_user,1,1,1,1
 access_hr_hospital_diagnosis,hr_hospital.diagnosis,model_hr_hospital_diagnosis,base.group_user,1,1,1,1
+access_hr_hospital_person_mixin,hr_hospital.person.mixin,model_hr_hospital_person_mixin,base.group_user,1,1,1,1
+access_hr_hospital_appointment,hr_hospital.appointment,model_hr_hospital_appointment,base.group_user,1,1,1,1
+access_hr_hospital_sample_type,hr_hospital.sample_type,model_hr_hospital_sample_type,base.group_user,1,1,1,1
+access_hr_hospital_doctor_history,hr_hospital.doctor_history,model_hr_hospital_doctor_history,base.group_user,1,1,1,1
+access_hr_hospital_illness,hr_hospital.illness,model_hr_hospital_illness,base.group_user,1,1,1,1
+access_hr_hospital_illness_category,hr_hospital.illness_category,model_hr_hospital_illness_category,base.group_user,1,1,1,1
+access_hr_hospital_research,hr_hospital.research,model_hr_hospital_research,base.group_user,1,1,1,1
+access_hr_hospital_research_type,hr_hospital.research_type,model_hr_hospital_research_type,base.group_user,1,1,1,1
+access_hr_hospital_doctor_wizard,hr_hospital.doctor.wizard,model_hr_hospital_doctor_wizard,base.group_user,1,1,1,1

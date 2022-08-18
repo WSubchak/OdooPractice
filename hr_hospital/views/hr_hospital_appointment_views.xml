@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="view_hospital_appointment_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.appointment.tree</field>
+        <field name="model">hr_hospital.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="_tree">
+                <field name="appointment_date"/>
+                <field name="doctor_id"/>
+                <field name="patient_id"/>
+                <field name="recommendation"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_hospital_appointment" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr_hospital.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="hr_hospital_appointment_list_menu"
+              name="Appointment list"
+              parent="hr_hospital_patient_catalog_menu"
+              action="action_hospital_appointment"/>
+</odoo>

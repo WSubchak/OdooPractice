@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="view_hospital_diagnosis_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.diagnosis.tree</field>
+        <field name="model">hr_hospital.diagnosis</field>
+        <field name="arch" type="xml">
+            <tree string="_tree">
+                <field name="diagnosis_date"/>
+                <field name="doctor_id"/>
+                <field name="patient_id"/>
+                <field name="illness_id"/>
+                <field name="therapy"/>
+            </tree>
+        </field>
+    </record>
+
     <record id="action_hospital_diagnosis" model="ir.actions.act_window">
         <field name="name">Diagnosis</field>
         <field name="type">ir.actions.act_window</field>

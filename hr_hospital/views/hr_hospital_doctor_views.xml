@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="view_hospital_doctor_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.doctor.tree</field>
+        <field name="model">hr_hospital.doctor</field>
+        <field name="arch" type="xml">
+            <tree string="_tree">
+                <field name="last_name"/>
+                <field name="first_name"/>
+                <field name="middle_name"/>
+                <field name="speciality"/>
+                <field name="is_intern"/>
+            </tree>
+        </field>
+    </record>
+
     <record id="action_hospital_doctor" model="ir.actions.act_window">
         <field name="name">Doctors</field>
         <field name="type">ir.actions.act_window</field>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hospital_research_tree" model="ir.ui.view">
+        <field name="name">hr_hospital.research.tree</field>
+        <field name="model">hr_hospital.research</field>
+        <field name="arch" type="xml">
+            <tree string="_tree">
+                <field name="research_type_id"/>
+                <field name="sample_type_id"/>
+                <field name="patient_id"/>
+                <field name="doctor_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_hospital_research" model="ir.actions.act_window">
+        <field name="name">Research</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr_hospital.research</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="hr_hospital_research_list_menu"
+              name="Research"
+              parent="hr_hospital_doctor_catalog_menu"
+              action="action_hospital_research"
+              sequence="100"/>
+</odoo>

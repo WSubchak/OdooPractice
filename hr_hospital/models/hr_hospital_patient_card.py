@@ -6,3 +6,4 @@ class HrHospitalPatientCard(models.Model):
     _description = 'Hospital Patient Card'
 
     name = fields.Char()
+    active = fields.Boolean(default=True)

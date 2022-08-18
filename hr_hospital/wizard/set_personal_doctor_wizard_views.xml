@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="set_personal_doctor_view_form" model="ir.ui.view">
+        <field name="name">hr_hospital.doctor.wizard.view.form</field>
+        <field name="model">hr_hospital.doctor.wizard</field>
+        <field name="arch" type="xml">
+            <form string="set_personal_doctor_form">
+                <div class="oe_title">
+                    <label for="doctor_id" class="oe_edit_only"/>
+                    <h3><field name="doctor_id" options="{'no_create': True}"/></h3>
+                </div>
+                <group>
+                    <field name="patient_ids"/>
+                </group>
+                <footer>
+                    <button name="action_set" type="object" string="Set" class="btn-primary"/>
+                    <button special="cancel" string="Close" class="oe_link"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="menu_hospital_doctor_setup" model="ir.actions.act_window">
+        <field name="name">Set personal doctor</field>
+        <field name="res_model">hr_hospital.doctor.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="hr_hospital.model_hr_hospital_patient"/>
+        <field name="binding_view_types">list</field>
+        <field name="binding_type">action</field>
+    </record>
+
+</odoo>

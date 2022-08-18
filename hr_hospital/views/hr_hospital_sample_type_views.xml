@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_hospital_sample_type" model="ir.actions.act_window">
+        <field name="name">Sample type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr_hospital.sample.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="hr_hospital_sample_type_list_menu"
+              name="Sample type"
+              parent="hr_hospital_doctor_catalog_menu"
+              action="action_hospital_sample_type"
+              sequence="100"/>
+</odoo>

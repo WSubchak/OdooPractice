@@ -30,7 +30,14 @@
         'views/hr_hospital_patientcard_views.xml',
         'views/hr_hospital_diagnosis_views.xml',
         'views/hr_hospital_doctor_views.xml',
-        'views/templates.xml',
+        'views/hr_hospital_appointment_views.xml',
+        'views/hr_hospital_doctor_history_views.xml',
+        'views/hr_hospital_sample_type_views.xml',
+        'views/hr_hospital_illness_views.xml',
+        'views/hr_hospital_illness_category_views.xml',
+        'views/hr_hospital_research_type_views.xml',
+        'views/hr_hospital_research_views.xml',
+        'wizard/set_personal_doctor_wizard_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
